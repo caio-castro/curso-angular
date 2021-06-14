@@ -8,4 +8,5 @@ export class Curso {
   avaliacao!: number;
   dataLancamento!: string;
   descricao!: string;
+  opcao!: string;
 }

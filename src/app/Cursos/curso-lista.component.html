@@ -19,6 +19,8 @@
       <th>Duração</th>
       <th>Avaliação</th>
       <th>Data de Lançamento</th>
+      <th>Opção</th>
+
     </tr>
   </thead>
 
@@ -34,6 +36,7 @@
         </app-estrela>
       </td>
       <td>{{curso.dataLancamento | date : 'dd/MM/yyyy'}}</td>
+      <td><a [routerLink]="['/curso/info',curso.id]" class="btn btn-primary">Editar</a></td>
     </tr>
   </tbody>
 

@@ -1,3 +1,4 @@
+import { CursoInfoComponent } from './Cursos/curso-info.component';
 import { Error404Component } from './error 404/error-404.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { ReplacePipe } from './pipe/replace.pipe';
@@ -19,17 +20,22 @@ import { RouterModule } from '@angular/router';
     EstrelaCompoent,
     ReplacePipe,
     NavBarComponent,
-    Error404Component
+    Error404Component,
+    CursoInfoComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     RouterModule.forRoot([
       {
-        path: '',redirectTo: 'CURSOS',pathMatch: 'full'
+        path: 'CURSOS', component: CursoListComponent,
+      },
+
+      {
+        path: 'curso/info/:id', component: CursoInfoComponent,
       },
       {
-        path: 'CURSOS', component: CursoListComponent,
+        path: '',redirectTo: 'CURSOS',pathMatch: 'full'
       },
       {
         path: '**', component: Error404Component

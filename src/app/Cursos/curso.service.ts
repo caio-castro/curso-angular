@@ -24,6 +24,7 @@ var CURSOS: Curso[] = [
       avaliacao: 3,
       preco: 12.99,
       imagemUrl: '/assets/imagens/cli.png',
+      opcao: '',
   },
   {
       id: 2,
@@ -35,6 +36,7 @@ var CURSOS: Curso[] = [
       avaliacao: 3.5,
       preco: 24.99,
       imagemUrl: '/assets/imagens/forms.png',
+      opcao: '',
   },
   {
       id: 3,
@@ -46,6 +48,7 @@ var CURSOS: Curso[] = [
       avaliacao: 4.0,
       preco: 36.99,
       imagemUrl: '/assets/imagens/http.png',
+      opcao: '',
   },
   {
       id: 4,
@@ -57,6 +60,7 @@ var CURSOS: Curso[] = [
       avaliacao: 4.5,
       preco: 46.99,
       imagemUrl: '/assets/imagens/router.png',
+      opcao: '',
   },
   {
       id: 5,
@@ -68,5 +72,6 @@ var CURSOS: Curso[] = [
       avaliacao: 5,
       preco: 56.99,
       imagemUrl: '/assets/imagens/animations.png',
+      opcao: '',
   }
 ];
